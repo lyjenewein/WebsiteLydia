@@ -88,7 +88,6 @@ a{
     z-index: 1000;
 }
 .side-nav:hover{
-    animation-play-state: paused;
 }
 
 .side-nav ul{
