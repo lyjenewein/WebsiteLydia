@@ -30,7 +30,6 @@ a{
 }
 
 
-
 .side-nav{
     position: fixed;
     right: 5vw;
@@ -38,7 +37,7 @@ a{
     background-color: rgb(0, 0, 0, 0.3);
     color: white;
     text-align: center;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .side-nav ul{
@@ -53,6 +52,8 @@ a{
 .slide-wrapper{
     margin-right: 5vw;
     margin-left: 5vw;
+    height: 80vh;
+    /*overflow: hidden;*/
 }
 
 .slide-wrapper .slide-container .slide{
@@ -60,21 +61,33 @@ a{
     width: 100%;
 }
 
-.slide {
+.slide-container{
     position:relative;
 }
 
+.slide {
+    position:absolute;
+}
+
 .blue{
-    background-color: #018F95;
+    background-color: #018F95; 
+    z-index: 999;
+    animation: fade 12s infinite;
 }
 .red{
     background-color: #E44F40;
+    z-index: 998;
+    animation: fade2 12s infinite;
 }
 .yellow{
     background-color: #E9B000;
+    z-index: 997;
+    animation: fade3 12s infinite;
 }
 .pink{
     background-color: #EB6F81;
+    z-index: 996;
+    animation: fade4 12s infinite;
 }
 
 .background-img{
@@ -90,4 +103,39 @@ a{
 .img-left{
     position: absolute;
     left: 5vw;
+}
+
+
+@keyframes fade
+{
+  0%   {opacity:1}
+  25% { opacity: 0}
+  50% { opacity: 0}
+  75% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+    0%   {opacity:0}
+    25% { opacity: 1}
+    50% { opacity: 0}
+    75% { opacity: 0}
+    100% { opacity: 0}
+}
+@keyframes fade3
+{
+    0%   {opacity:0}
+    25% { opacity: 0}
+    50% { opacity: 1}
+    75% { opacity: 0}
+    100% { opacity: 0}
+}
+
+@keyframes fade4
+{
+    0%   {opacity:0}
+    25% { opacity: 0}
+    50% { opacity: 0}
+    75% { opacity: 1}
+    100% { opacity: 0}
 }
