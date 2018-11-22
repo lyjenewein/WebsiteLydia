@@ -87,8 +87,6 @@ a{
     text-align: center;
     z-index: 1000;
 }
-.side-nav:hover{
-}
 
 .side-nav ul{
     padding: 0;
@@ -202,3 +200,97 @@ a{
     -o-animation-play-state:paused; 
     animation-play-state:paused;
 }*/
+
+
+
+
+.web-active{
+    background-color: #018F95;
+    color: white;
+}
+
+.gra-active{
+    background-color: #E44F40;
+    color: white;
+}
+.art-active{
+    background-color: #E9B000;
+    color: white;
+}
+
+/*------------------------GRID------------------*/
+
+.wrapper{
+    height: 87vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    overflow: scroll;
+}
+
+.grid-container {
+    display:grid;
+
+}
+
+.grid-item {
+    padding: 1em;  
+    height: 45vh;
+}
+
+.grid-item img{
+    height: 100%;
+}
+
+.col-2 {
+    grid-template-columns: repeat(2,1fr);
+}
+
+[data-gridcolor="blue"]:hover {
+    background:linear-gradient(#018F95, transparent);
+
+}
+
+[data-gridcolor="red"]:hover  {
+    background: linear-gradient(#E44F40, transparent); 
+}
+
+[data-gridcolor="yellow"]:hover  {
+    background: linear-gradient(#E9B000, transparent); 
+}
+
+[data-gridcolor="pink"]:hover  {
+    background: linear-gradient(#EB6F81, transparent);
+}
+
+.overlay-container{
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    z-index: 100;
+  }
+
+  .grid-item:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
