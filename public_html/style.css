@@ -501,3 +501,32 @@ a{
         transform: translate3d(0, 50%, 0) rotateX(-90deg) scale(0.5) skewX(-3deg);
    }
 }
+
+
+
+/*--------------CONTACT-----------*/
+
+.contact-wrapper{
+    height:100vh;
+    width:auto;
+    margin: 2em;
+}
+.inner-contact{
+    background-color: #018F95;
+    height: 100vh;
+    animation: changeColor 10s ease infinite;
+    padding: 10% 10% 0% 10%;
+}
+
+
+@keyframes changeColor{
+    0%{background-color: #018F95;}
+    25%{background-color: #E44F40;}
+    50%{background-color: #E9B000;}
+    75%{background-color: #EB6F81;}
+}
+
+.house{
+    border: 2px solid white;
+    height: 60%;
+}
