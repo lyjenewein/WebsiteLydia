@@ -11,6 +11,7 @@ body{
 
 a{
     all:unset;
+    cursor:pointer;
 }
 
 
@@ -507,15 +508,13 @@ a{
 /*--------------CONTACT-----------*/
 
 .contact-wrapper{
-    height:100vh;
+    height:88vh;
     width:auto;
-    margin: 2em;
+    background-color: #018F95;
+    animation: changeColor 10s ease infinite;
 }
 .inner-contact{
-    background-color: #018F95;
-    height: 100vh;
-    animation: changeColor 10s ease infinite;
-    padding: 10% 10% 0% 10%;
+    height: 100%;
 }
 
 
@@ -527,6 +526,113 @@ a{
 }
 
 .house{
-    border: 2px solid white;
-    height: 60%;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+
+.small{
+    font-family: 'Mada', sans-serif;  
+    font-size: 1.2vw;
+    margin-bottom: 0;
+}
+
+.big{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5vw;
+    margin: 0;
+}
+
+.paragraph{
+    font-size: 1.5vw;
+    margin-top: 2.5vh;
+}
+
+.paragraph i {
+    color: #018F95;
+    animation: colorFade 10s infinite;
+    font-size:1.2em;
+}
+
+.socials{
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 4%;
+    font-size: 3vw;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-evenly;
+    border-top: 1px solid rgb(218, 217, 215);
+    color: #55544f;
+}
+
+.contact-back-container{
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-evenly;   
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    width: 52%;
+}
+
+.contact-back{
+    background: white;
+    border-radius: 5px;
+    padding: 1em;
+    font-size: 1.5vw;
+}
+
+.crow{
+    color: black;
+    font-size: 4vw;
+    position: absolute;
+    animation-timing-function: linear;
+    animation: crow 10s ease-out infinite;
+    z-index: 1000;
+    left: 25vw;
+    top: -10vh;
+}
+
+
+@keyframes crow {	
+    20%{left: 25vw;
+        top: -10vh;}
+    25%{left: 25vw;
+    top: 25vh;}
+    28%{transform: rotate(0deg);}
+    30%{left: 35vw;
+        top: 25vh;
+        transform: rotate(17deg);}
+    32%{
+        transform: rotate(0deg);}
+    40%{left: 35vw;
+        top: 25vh;}
+    60%{left: 45vw;
+        top: 25vh;}
+    67% {left: 45vw;
+        top: 25vh;}
+    70%{left: 45vw;
+        top: 20vh;}
+    73%{left: 45vw;
+        top: 25vh;}
+    80%{left: 45vw;
+        top: 25vh;}
+    90%{left: 47vw;
+        top: 25vh;
+        transform: rotate(0deg);}
+    93%{transform: rotate(-10deg);}
+    100%{left:90vw;
+        top: -10vh;
+        transform: rotate(-10deg);}
 }
