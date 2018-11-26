@@ -24,6 +24,17 @@ a{
     letter-spacing: 0.2em;
 }
 
+
+.link-yellow{
+    color: #E9B000;
+    font-weight: bold;
+    font-family: 'Mada', sans-serif;  
+    letter-spacing: 0.1em;
+}
+.link-yellow:hover{
+    letter-spacing: 0.2em;
+}
+
 /*------------------TOPNAVBAR-------------*/
 
 
@@ -409,6 +420,27 @@ a{
     background-repeat: no-repeat;
 }
 
+
+.lizardpeople-hero{
+    height: 50vh;
+    width: 100%; 
+    padding: 0;
+    position: relative;
+    background-image: url(images/websites/lizardpeople-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio-hero{
+    height: 50vh;
+    width: 100%; 
+    padding: 0;
+    position: relative;
+    background-image: url(images/websites/portfolio-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .caption-websites{
     background-color: rgb(77, 72, 72);
     color: white;
@@ -417,6 +449,8 @@ a{
     font-size: 3vw;
     margin-right: 0.5vw;
 }
+
+
 
 [data-color="blue"]{
     background-color: #018F95;
