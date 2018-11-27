@@ -35,6 +35,16 @@ a{
     letter-spacing: 0.2em;
 }
 
+.link-black{
+    color: #55544f;
+   font-weight: bold;
+    font-family: 'Mada', sans-serif;  
+    letter-spacing: 0.1em;
+}
+.link-black:hover{
+    letter-spacing: 0.2em;
+}
+
 /*------------------TOPNAVBAR-------------*/
 
 
@@ -191,6 +201,7 @@ a{
     overflow-y: scroll;
     position: relative;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .slide-wrapper .slide-container .slide{
@@ -217,6 +228,7 @@ a{
     height: 99%;
     width: auto;
     z-index: 0;
+
 }
 
 .img-right{
@@ -316,6 +328,10 @@ a{
 
 .col-2 {
     grid-template-columns: repeat(2,1fr);
+}
+
+.col-1 {
+    grid-template-columns: repeat(1,1fr);
 }
 
 [data-gridcolor="blue"]:hover {
@@ -441,6 +457,28 @@ a{
     background-repeat: no-repeat;
 }
 
+
+.bubbens-hero{
+    height: 50vh;
+    width: 100%; 
+    padding: 0;
+    position: relative;
+    background-image: url(images/websites/bubbens-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.vintage-hero{
+    height: 50vh;
+    width: 100%; 
+    padding: 0;
+    position: relative;
+    background-image: url(images/websites/vintage-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 .caption-websites{
     background-color: rgb(77, 72, 72);
     color: white;
@@ -450,7 +488,13 @@ a{
     margin-right: 0.5vw;
 }
 
+.art-text{
+    margin-top: 3em;
+}
 
+.art-caption{
+    font-family: 'Montserrat', sans-serif;
+}
 
 [data-color="blue"]{
     background-color: #018F95;
@@ -516,6 +560,10 @@ a{
     grid-template-columns: repeat(3,1fr);
 }
 
+.puffer{
+    padding: 2em;
+}
+
 .github{
     padding: 1em;
     font-family:'Mada', sans-serif; 
@@ -538,6 +586,7 @@ a{
     margin-bottom: 1em;
     padding: 1em;
     cursor: pointer;
+    margin-top: 1em;
 }
 /*------------gooey arrow-------------*/
 
@@ -770,4 +819,13 @@ a{
     100%{left:90vw;
         top: -10vh;
         transform: rotate(-10deg);}
+}
+
+/*-------------MEDIA SCREEN-------------*/
+
+@media screen and (max-width: 768px) {
+
+.col-2{
+    grid-template-columns: repeat(1,1fr);
+    }
 }
