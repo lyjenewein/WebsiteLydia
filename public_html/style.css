@@ -456,7 +456,25 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.spookyicons-hero{
+    height: 50vh;
+    width: 100%; 
+    padding: 0;
+    position: relative;
+    background-image: url(images/websites/heroicons.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.ljmonogram-hero{
+    height: 50vh;
+    width: 100%; 
+    padding: 0;
+    position: relative;
+    background-image: url(images/websites/monogram_hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .bubbens-hero{
     height: 50vh;
