@@ -456,6 +456,37 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.edumag-hero {
+    height: 50vh;
+    width: 100%; 
+    padding: 0;
+    position: relative;
+    background-image: url(images/websites/magazine_header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.printonpoint-hero {
+    height: 50vh;
+    width: 100%; 
+    padding: 0;
+    position: relative;
+    background-image: url(images/websites/printonpoint_header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.businesscard-hero {
+    height: 50vh;
+    width: 100%; 
+    padding: 0;
+    position: relative;
+    background-image: url(images/websites/businesscard_header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .spookyicons-hero{
     height: 50vh;
     width: 100%; 
