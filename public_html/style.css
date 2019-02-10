@@ -457,6 +457,16 @@ a{
     background-repeat: no-repeat;
 }
 
+.flexeats-hero {
+    height: 50vh;
+    width: 100%; 
+    padding: 0;
+    position: relative;
+    background-image: url(images/websites/flexeats\ hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .edumag-hero {
     height: 50vh;
     width: 100%; 
@@ -870,6 +880,10 @@ a{
         transform: rotate(-10deg);}
 }
 
+
+.flexeatsGIF{
+    text-align: center;
+}
 /*-------------MEDIA SCREEN-------------*/
 
 @media screen and (max-width: 768px) {
@@ -1047,6 +1061,30 @@ a{
     .portfolio-hero{
         height: 35vh;
     }
+
+    .flexeats-hero {
+        height: 35vh;
+    }
+
+    .edumag-hero {
+        height: 35vh;
+    }
+    
+    .printonpoint-hero {
+        height: 35vh;
+    }
+    
+    .businesscard-hero {
+        height: 35vh;
+    }
+    
+    .spookyicons-hero{
+        height: 35vh;
+    }
+    
+    .ljmonogram-hero{
+        height: 35vh;
+    }
     
     
     .bubbens-hero{
@@ -1056,6 +1094,7 @@ a{
     .vintage-hero{
         height: 35vh;
     }
+
 
     .caption-websites{
         font-size: 4.7vw;
