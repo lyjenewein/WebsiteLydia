@@ -426,6 +426,16 @@ a{
     background-repeat: no-repeat;
 }
 
+.printonpoint-hero{
+    height: 50vh;
+    width: 100%; 
+    padding: 0;
+    position: relative;
+    background-image: url(images/websites/printonpoint-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .trailbuddies-hero{
     height: 50vh;
     width: 100%; 
@@ -463,16 +473,6 @@ a{
     padding: 0;
     position: relative;
     background-image: url(images/websites/magazine_header.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.printonpoint-hero {
-    height: 50vh;
-    width: 100%; 
-    padding: 0;
-    position: relative;
-    background-image: url(images/websites/printonpoint_header.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
