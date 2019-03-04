@@ -158,6 +158,10 @@ a{
     color: white;
 }
 
+#film-active{
+    background-color: #EB6F81;
+    color: white;
+}
 
 
 /*-------------SIDENAVBAR-----------*/
@@ -918,11 +922,11 @@ a{
 
     .topnav{
         margin:0;
-        font-size: 4.5vw;
+        font-size: 3.5vw;
     }
 
     .topnav .nav-container .primary-nav li{
-        padding: 0.2em;
+        padding: 0.4em;
         padding-bottom: 0.5em;
         padding-top: 0.5em;
     }
