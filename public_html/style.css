@@ -313,11 +313,13 @@
         padding-top: 1.5vh;
         padding-left: 1vw;
         padding-bottom: 1.5vh;
+        overflow:hidden;
     }
 
-    .box{   
-    
+    .box{
+        overflow:hidden;
     }
+
 
     .box-text{
         font-family: 'Montserrat', sans-serif;
@@ -328,21 +330,11 @@
         position: relative;
     }
 
-    .lydia{
-        font-family: 'Montserrat', sans-serif;
-        margin: 0;
-        color: white;
-        background-color:#018F95;
-        padding: 1vw;
-        position: relative;
-        left: 0;
-        top: 25%;
-        font-size: 2em;
-    }
-
     .boximg{
         width: 100%;
+        overflow: hidden;
     }
+
 
     .inline{
         display:inline-block;
@@ -372,12 +364,49 @@
         height: 20em; 
 
     }
+    
 
     .d1{
         background-image: url(images/g.raff1.png);
         background-size: cover;
         background-repeat: no-repeat;
         grid-row: 2;
+    }
+
+    .a{
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+
+    .b{
+        grid-column: 2/4;
+        grid-row: 1;
+        height: 50vh;
+    }
+
+    .c{
+        grid-row: 2;
+        height: 50vh;
+    }   
+
+    .d{
+        grid-row: 2;
+    }
+
+    .e{
+        grid-row:1;
+    }
+
+    .f{
+        grid-row:1;
+    }
+
+    .g{
+        grid-row: 1/3;
+    }
+
+    .h{
+        grid-column: 1/3;
     }
 
     .name{
@@ -452,22 +481,24 @@
         opacity: 0;
         transition: .5s ease;
         z-index: 100;
-        cursor:pointer;
+        cursor:pointer;        
+        background: rgb(0, 0, 0, 0.5);
     }
 
     .grid-item:hover .overlay {
         opacity: 1;
     }
 
+    .box:hover .overlay {
+        opacity: 1;
+    }
+
     .text {
-        font-family: 'Mada', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
         color: #F4F3F1;
-        background: rgb(0, 0, 0, 0.5);
-        padding-top: 1em;
         padding-bottom: 1em;
-        width: 100%;
-        font-size: 20px;
+        font-size: 3em;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -640,6 +671,9 @@
     .art-caption{
         font-family: 'Montserrat', sans-serif;
     }
+
+    .rideanddie{
+        width:100%; }
 
     [data-color="blue"]{
         background-color: #018F95;
