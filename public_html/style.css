@@ -335,6 +335,8 @@
         overflow: hidden;
     }
 
+    
+
 
     .inline{
         display:inline-block;
@@ -409,6 +411,29 @@
         grid-column: 1/3;
     }
 
+    .boxcontainer2{
+        display: grid;
+        height: 100Vh;
+        grid-template-columns: 43vw 43vw;
+        grid-gap: 1vw;
+        background-color:#282828;
+        padding-top: 1.5vh;
+        padding-left: 1vw;
+        padding-bottom: 1.5vh;
+        overflow:hidden;
+    }
+
+    .box2{
+        background-color: pink;
+
+        height:70vh;
+    }
+
+    .blablabox{
+        background-color: #202020;  
+        text-align:center;
+        padding: 2em;
+    }
     .name{
         color:#E44F40;
         float:right;
@@ -418,6 +443,7 @@
         margin-right: 5vw;
         margin-left: 5vw;
         overflow-y: scroll;
+        background-color: #282828;
     }
 
     .grid-container {
@@ -720,6 +746,13 @@
     .rulerofgrids{
         display:grid;
         margin: 1em;
+        grid-gap: 1vw;
+        background-color:#282828;
+        padding-top: 1.5vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-bottom: 1.5vh;
+
     }
 
     .gridarmy {
