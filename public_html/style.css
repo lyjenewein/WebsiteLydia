@@ -19,7 +19,6 @@
         font-family: 'Mada', sans-serif;  
         letter-spacing: 0.1em;
         font-size: 1.5vw;
-
     }
     .link-pink:hover{
         text-shadow:  0 0 15px #EB6F81;
@@ -294,7 +293,7 @@
 
     .queen-text{
         color: white;
-        font-size: 1.5vw;
+        font-size: 1.2vw;
         margin-top: 2.5vh;
     }
 
@@ -330,7 +329,7 @@
         font-family: 'Montserrat', sans-serif;
         margin: 0;
         color: white;
-        font-size: 7vh;
+        font-size: 4vw;
         padding: 1vw;
         position: relative;
     }
@@ -339,43 +338,6 @@
         height: 100%;
         width: auto;
         overflow: hidden;
-    }
-
-    
-    .inline{
-        display:inline-block;
-    }
-    .a1{
-        grid-column: 1;
-        grid-row: 1 / 3;
-        background-image: url(images/rideanddie3.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .c1{
-        grid-row: 2;
-        padding: 2em;
-        height: 20em;  
-
-    }   
-
-    .b1{
-        background-image: url(images/Dinosaur.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        grid-column: 2/4;
-        grid-row: 1;
-        height: 20em; 
-
-    }
-    
-
-    .d1{
-        background-image: url(images/g.raff1.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        grid-row: 2;
     }
 
     .a{
@@ -439,7 +401,7 @@
 
     .blablabox{
         background-color: #202020;  
-        text-align:center;
+        text-align:left;
         padding: 2em;
     }
     .name{
@@ -704,8 +666,10 @@
         font-family: 'Montserrat', sans-serif;
     }
 
-    .rideanddie{
-        width:100%; }
+
+    .art-wrapper{
+        padding: 1em;
+    }
 
     [data-color="blue"]{
         background-color: #018F95;
@@ -758,11 +722,12 @@
         padding-left: 1vw;
         padding-right: 1vw;
         padding-bottom: 1.5vh;
-
     }
 
     .gridarmy {
         transition: transform .2s;
+        height: 70vh;
+        background-color: #202020;
     }
 
     .scale:hover{
@@ -771,8 +736,9 @@
 
     .gridarmy img{
         width: 100%;
-        height: auto; 
+        height: auto;
     }
+    
 
     .col-3 {
         grid-template-columns: repeat(3,1fr);
@@ -1048,8 +1014,6 @@
 
     @media screen and (max-width: 768px) {
 
-
-
     .col-2{
         grid-template-columns: repeat(1,1fr);
         }
@@ -1057,6 +1021,31 @@
 
 
     @media screen and (max-width: 600px) {
+
+        .link-pink{
+            font-size: 1em;
+        }
+
+        .box-text{
+            font-size: 9vw;
+            padding-top: 1.5em;
+        }
+
+
+        .boxcontainer{
+            display: inline;
+            padding: 0;
+        }
+
+        .box{
+            height: 50vh;
+        }
+        
+        .boximg{
+
+        }
+    
+
         .background-img {
         opacity: 0.3;
         }
@@ -1143,11 +1132,14 @@
             margin: 0;
         }
         
+
         .queen-text{
             color: white;
-            font-size: 5vw;
+            font-size: 1em;
             margin-top: 2.5vh;
-        }    
+            padding-left: 1em;
+            padding-right: 1em;
+        }
         
         .special-text{
             color:black;
@@ -1164,37 +1156,19 @@
         .wrapper{
             overflow-x: hidden;
             margin: 0;
-            height:100vh;
-        }
-
-        [data-gridcolor="blue"]{
-            background:linear-gradient(#018F95, transparent);
-        }
-        
-        [data-gridcolor="red"]{
-            background: linear-gradient(#E44F40, transparent); 
-        }
-        
-        [data-gridcolor="yellow"]{
-            background: linear-gradient(#E9B000, transparent); 
-        }
-        
-        [data-gridcolor="pink"]{
-            background: linear-gradient(#EB6F81, transparent);
+            height: 87vh;
         }
         
         .overlay {
             opacity: 1;
+            background-color:rgb(0, 0, 0, 0.1);
         }
         
         .text {
-            top: 11%;
+            top: 85%;
             left: 50%;
-            padding-top: 0.5em;
-            padding-bottom: 0.5em;
             background: none;
             font-size: 7vw;
-            font-family:'Open Sans', sans-serif;
         }
 
         .lydiaj-hero{
